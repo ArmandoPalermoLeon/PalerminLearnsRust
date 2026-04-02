@@ -1,0 +1,10 @@
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# This is the cargo configuration format, cargo os rust build system & package manager, it handles the dependencies.
+#
+

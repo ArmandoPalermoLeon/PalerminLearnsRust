@@ -1,0 +1,23 @@
+A note about the Stack & the heap
+
+In Rust it is pretty important to know whenever the variable we're working on is either in the stack or in the heap.
+The stack stores values following the LIFO, last in, first out. Just as the data structure Stack.
+All data stored in the stack has: A fixed size that must be known, if the data doesnt have a fixed size, it 
+is stored in the heap.
+The heap is less organized than the stack, it follows these 3 rules:
+1. The memory allocator finds a certain amount of space in the heap 
+2. Marks it as being used 
+3. Returns a pointer, which is the address of that location.
+
+This process is called: allocating on the heap, pushing values in the stack is not allocating.
+This next part is crucial, that pointer is of a fixed size, so the pointer itself, is stored in the stack, not the heap. 
+Because of this, accesing data on the heap is slower,because you have to go through the pointer itself. 
+So here comes ownership, to manage the heap data.
+
+Now, let's check the core of ownership itself, with these 3 rules.
+1. Each value in Rust has an owner 
+2. There can only be one owner at a time 
+3. When the owner goes out of scope, the value will be dropped. 
+
+A great example would be the string type, which we would work on this cargo project.
+

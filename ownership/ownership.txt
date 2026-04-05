@@ -21,3 +21,6 @@ Now, let's check the core of ownership itself, with these 3 rules.
 
 A great example would be the string type, which we would work on this cargo project.
 
+An important part are how references work, it is the best way to avoid errors and Rust makes sure we dont make them,
+mutable references are also important, we cant have more than one or one immutable and one mutable, but they allow us to change code. 
+

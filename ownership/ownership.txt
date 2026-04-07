@@ -24,3 +24,7 @@ A great example would be the string type, which we would work on this cargo proj
 An important part are how references work, it is the best way to avoid errors and Rust makes sure we dont make them,
 mutable references are also important, we cant have more than one or one immutable and one mutable, but they allow us to change code. 
 
+After that we can do the rules of reference 
+We can have either 1 mutable reference or any number of immutable references 
+There's some kind of references, they're called Slicing. 
+
